@@ -1,0 +1,42 @@
+#root {
+  font-family: 'Kanit', sans-serif;
+  line-height: 0px;
+}
+
+.fill {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  top: 40px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+.nav {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  z-index: 1;
+}
+
+.navItem {
+  text-align: center;
+  align-self: center;
+  flex: 1;
+  list-style-type: none;
+  padding: 10px;
+}
