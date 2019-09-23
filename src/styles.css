@@ -13,7 +13,9 @@ h1,h2,h3,h4{
 
 
 * { box-sizing: border-box; }
-
+.form-container{
+  max-width: 420px;
+}
 
 .video-background {
   background: transparent;
@@ -29,6 +31,17 @@ h1,h2,h3,h4{
   height: 100%;
   pointer-events: none;
   z-index: -1;
+}
+
+.svg-border-mask {
+  -webkit-mask-box-image: url(~/images/cordoba.svg);
+  transform: scaleY(1.6);
+  position: absolute;
+  left: -16%;
+  top: 292%;
+  width: 40%;
+
+
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -49,6 +62,32 @@ h1,h2,h3,h4{
   z-index: -22;
 }
 
+input[type=text],input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #F1F378;
+  color: #333;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #F1F378;
+}
+
+.white{
+  color:white;
+  text-shadow: 1px 1px 3px rgb(94, 94, 74);
+}
 
 .btn-warning{
   background-color: #F1F378!important;
@@ -122,16 +161,6 @@ h6{
 
 }
 
-.quienesomos:after{
-  background: url(~/images/clientes.jpg) no-repeat center center;
-  content:"";
-  top: 20%;
-  left: 0;
-  width: 30%;
-  height:60%;
-  position:absolute;
-  z-index:2;
-}
 
 
 body {

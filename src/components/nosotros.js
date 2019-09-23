@@ -12,13 +12,17 @@ class Nosotros extends React.Component {
     return (
         <div  >
             <Navegador />
+
             <Container fluid="true" className="py-5 my-5 text-left quienesomos" style={{backgroundColor: '#FFF'}}>
+
               <Container>
                   <Row>
-                      <Col xs={12} md={12} >
+                      <Col xs={12} md={12} style={{position: 'relative'}} >
                           <h2>                     
                               Quienes Somos
                           </h2>
+                          <img src="./images/clientes.jpg" alt="" class="svg-border-mask" />
+
                       </Col>
 
                       <Col xs={12} md={{span: 7, offset: 4}}>

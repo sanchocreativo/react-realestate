@@ -4,9 +4,9 @@ import ReactDOM from 'react-dom'
 import '../styles.css'
 import Navegador from './navegador'
 import Footer from './footer'
+import Contact from './contact'
+
 import { Container, Row, Col, Button, Image } from 'react-bootstrap';
-// import YouTube from 'react-youtube';
-import YouTube from '@u-wave/react-youtube';
 
 import { HashLink  } from 'react-router-hash-link';
 
@@ -39,25 +39,14 @@ class Home extends React.Component {
           <iframe src="https://www.youtube.com/embed/rJFhtLc9bjg?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=rJFhtLc9bjg" frameborder="0" allowfullscreen></iframe>
         </div>
     
-       {/* <YouTube
-        video="rJFhtLc9bjg"
-        autoplay
-        muted
-        controls={false}
-        showInfo={false}
-        showRelatedVideos={false}
-        frameBorder={0}
-        className="w-100 h-100 video-foreground"
-        />  */}
-
               <Container>
                   <Row>
                       <Col xs={12} md={5} >
-                          <h1>                     
+                          <h1 className="white">                     
                           Grupo <br />Kowalski
                           </h1>
 
-                          <h3 className="text-muted">Desarrolladora y comercializadora inmobiliaria</h3>
+                          <h3 className="white">Desarrolladora y comercializadora inmobiliaria</h3>
                           <Button variant="warning" className="mt-3" >
                             <HashLink  to="/#ciudadparque">
                             Experiencia Virtual 3D
@@ -69,7 +58,7 @@ class Home extends React.Component {
                        
                       </Col>
                       <Col xs={12} className="mt-auto pl-0" md={3}>
-                        <h4 className="  ml-4">
+                        <h4 className="white  ml-4">
                           Loteo La riviera
                         </h4>
                         <div className="button-decor"></div>
@@ -84,7 +73,7 @@ class Home extends React.Component {
                     </Col>
 
                     <Col xs={12} md={3} className="mt-auto pl-0" style={{marginLeft: '-15px'}}>
-                      <h4 className="  ml-4">
+                      <h4 className=" white ml-4">
                         Loteo Villa Ciudad Parque
                       </h4>
                       <div className="button-decor"></div>
@@ -97,7 +86,7 @@ class Home extends React.Component {
             </Container>
 
            
-            <Container fluid="true" className="experienciacontainer">
+            <Container fluid="true" className="experienciacontainer py-5">
 
               <Container   className="mx-auto ">
                 <Row>
@@ -127,7 +116,7 @@ class Home extends React.Component {
               </Container>
 
             </Container>
-            <Container fluid="true" className="experienciacontainer">
+            <Container fluid="true" className="experienciacontainer py-5">
 
             <Container   className="ml-auto mb-5 pb-5" style={{marginTop: '-5rem', zIndex: '4', backgroundColor: 'white'}}>
               <Row>
@@ -233,19 +222,18 @@ de inversión                        </h6>
               <Row>
                 <Col className="mx-auto" md={{span:6, offset:1}}>
                   <h2 className="my-4 text-center">
-                    Ver Video de Loteo Villa Ciudad Parque
+                    Contactanos para saber más acerca de este proyecto
                   </h2>
 
-                  {/* <YouTube
-                    className="mx-0 px-0"
-                    videoId="rJFhtLc9bjg"
-                    opts={opts}
-                    onReady={this._onReady}
-                  /> */}
+              
 
                 </Col>
               </Row>
             </Container>
+
+      <Container className="mb-5">
+        <Contact />
+      </Container>
 
       <Footer />
      
