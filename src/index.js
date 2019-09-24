@@ -8,6 +8,8 @@ import useRouter from './useRouter'
 import './styles.css'
 import Home from './components/home'
 import Nosotros from './components/nosotros'
+import Contacto from './components/contacto'
+
 
 
 export default function App() {
@@ -22,6 +24,7 @@ export default function App() {
       <Switch location={item}>
         <Route path="/" exact component={Home} />
         <Route path="/nosotros" component={Nosotros}  />
+        <Route path="/contacto" component={Contacto}  />
       </Switch>
     </animated.div>
   ))

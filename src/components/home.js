@@ -90,35 +90,33 @@ class Home extends React.Component {
 
               <Container   className="mx-auto ">
                 <Row>
-                  <Col className="mx-auto" md={{span:5, offset:2}} style={{marginBottom: '-14rem'}}>
+                  <Col className="mx-auto" md={{span:5, offset:2}}  style={{marginBottom: '-14rem', zIndex: '354354354'}}>
                     <Image src="./images/360.jpg" className="py-4" fluid />
                   </Col>
-
-                
-
                 </Row>
               </Container>
 
               <Container className="mt-5 pt-5 " >
-
-                    <Row>
-                        <Col className="expe3d px-4 py-3" xs={12} md={{span:5, offset:1}} >
-                            <a href="/villaciudadparque" id="ciudadparque" target="_blank">
-                              <h2>                     
-                                  Ver <br />
-                                  Experiencia<br />
-                                  3D
-                              </h2>
-                              <Image src="./images/ar-glasses.svg" className="py-4" fluid />
-                            </a>
-                        </Col>
-                    </Row>
+                <Row>
+                    <Col className="px-4 py-3 expe3d" xs={12} md={{span:5, offset:1}} >
+                        <div className=" w-100 h-100">
+                        <a href="/villaciudadparque" id="ciudadparque" target="_blank">
+                          <h2>                     
+                              Ver <br />
+                              Experiencia<br />
+                              3D
+                          </h2>
+                          <Image src="./images/ar-glasses.svg" className="py-4"  fluid />
+                        </a>
+                        </div>
+                    </Col>
+                </Row>
               </Container>
 
             </Container>
             <Container fluid="true" className="experienciacontainer py-5">
 
-            <Container   className="ml-auto mb-5 pb-5" style={{marginTop: '-5rem', zIndex: '4', backgroundColor: 'white'}}>
+            <Container   className="ml-auto mb-5 pb-5" style={{marginTop: '-10rem', zIndex: '4', backgroundColor: 'white'}}>
               <Row>
                 <Col className="ml-auto" md={{span:7, offset:1}} >
 
@@ -134,9 +132,7 @@ class Home extends React.Component {
             </Container>
             <Container fluid="true" className="experienciacontainer">
 
-
-            <Container className="mt-5 pt-5" >
-
+            <Container className="" >
               <Row>
                   <Col className="expe3d" xs={12} md={{span:6, offset:1}} style={{zIndex: '5'}}>
                       <a href="/villaciudadparque" id="ciudadparque" target="_blank">
@@ -218,22 +214,24 @@ de inversión                        </h6>
 
 
 
-            <Container   className="mx-auto mb-5">
-              <Row>
+            <Container  fluid="true"  className="mx-auto py-5 sky-gradient-11">
+              <Row fluid="true" style={{zIndex: '12'}} className="">
                 <Col className="mx-auto" md={{span:6, offset:1}}>
+
                   <h2 className="my-4 text-center">
                     Contactanos para saber más acerca de este proyecto
                   </h2>
 
-              
-
+                  <Contact />
                 </Col>
               </Row>
+              <div>
+              <Image src="./images/fondo.png" className="pt-4 mx-auto background-contact" fluid />
+              </div>
+
             </Container>
 
-      <Container className="mb-5">
-        <Contact />
-      </Container>
+    
 
       <Footer />
      

@@ -18,7 +18,7 @@ class Nosotros extends React.Component {
               <Container>
                   <Row>
                       <Col xs={12} md={12} style={{position: 'relative'}} >
-                          <h2>                     
+                          <h2 className="text-center">                     
                               Quienes Somos
                           </h2>
                           <img src="./images/clientes.jpg" alt="" class="svg-border-mask" />
